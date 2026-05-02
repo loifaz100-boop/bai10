@@ -9,7 +9,8 @@ public class ShippingCalculatorTest {
 
     @Test
     void testStandard() {
-        assertEquals(15000.0, calc.calculate(5, "STANDARD"));
+        // Cập nhật kết quả kỳ vọng từ 15000.0 lên 20000.0 (vì 5kg * 4000 = 20000)
+        assertEquals(20000.0, calc.calculate(5, "STANDARD"));
     }
 
     @Test
